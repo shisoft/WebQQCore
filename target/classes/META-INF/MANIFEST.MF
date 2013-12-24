@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1387842622458
+Build-Jdk: 1.7.0_25
+Built-By: shisoft
+Bundle-Activator: net.shisoft.classqq.Activator
+Bundle-ManifestVersion: 2
+Bundle-Name: ClassQQ OSGi Bundle
+Bundle-SymbolicName: net.shisoft.ClassQQ
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: net.shisoft.rmi.server.svr.plugin;uses:="org.apache.comm
+ ons.lang3.mutable,net.shisoft.datasources,org.apache.commons.lang3,net.
+ shisoft.sdk.utils,net.shisoft.db.obj,net.shisoft.providers,net.shisoft.
+ cloud.interfaces,net.shisoft.sdk.Logic,net.shisoft.sdk.Helpers,net.shis
+ oft.user.environment,net.shisoft.util.thread,net.shisoft.cloud.beans";v
+ ersion="1.0.0.SNAPSHOT"
+Import-Package: javax.imageio,javax.net,javax.net.ssl,javax.script,javax
+ .swing,net.shisoft.cloud.beans,net.shisoft.cloud.interfaces,net.shisoft
+ .datasources,net.shisoft.db.obj,net.shisoft.providers,net.shisoft.sdk.H
+ elpers,net.shisoft.sdk.Logic,net.shisoft.sdk.utils,net.shisoft.user.env
+ ironment,net.shisoft.util.thread,org.apache.commons.lang3;version="[3.1
+ ,4)",org.apache.commons.lang3.mutable;version="[3.1,4)",org.apache.http
+ ,org.apache.http.client,org.apache.http.client.config,org.apache.http.c
+ lient.entity,org.apache.http.client.methods,org.apache.http.client.util
+ s,org.apache.http.concurrent,org.apache.http.conn,org.apache.http.entit
+ y.mime,org.apache.http.entity.mime.content,org.apache.http.impl.client,
+ org.apache.http.impl.nio.client,org.apache.http.message,org.apache.http
+ .nio,org.apache.http.nio.client.methods,org.apache.http.nio.protocol,or
+ g.apache.http.params,org.apache.http.protocol,org.apache.log4j;version=
+ "[1.2,2)",org.json,org.osgi.framework;version="[1.6,2)"
+Tool: Bnd-1.50.0

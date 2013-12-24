@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <pathconvert pathsep=":" property="plugins.jars">
+    <path refid="maven.runtime.classpath"/>
+    <map to="" from="/home/shisoft/NetBeansProjects/ClassQQ/target/classes"/>
+  </pathconvert>
+  <pathconvert pathsep=" " property="bundles">
+    <path path="${plugins.jars}"/>
+    <mapper>
+      <chainedmapper>
+        <flattenmapper/>
+        <globmapper to="file:modules/*" casesensitive="no" from="*"/>
+      </chainedmapper>
+    </mapper>
+  </pathconvert>
+  <propertyfile file="/home/shisoft/NetBeansProjects/ClassQQ/target/config.properties">
+    <entry value="${bundles} file:modules/ClassQQ-1.0-SNAPSHOT.jar" key="felix.auto.start"/>
+    <entry value="*" key="org.osgi.framework.bootdelegation"/>
+  </propertyfile>
+  <copy file="${maven.dependency.org.apache.felix.org.apache.felix.main.jar.path}" tofile="/home/shisoft/NetBeansProjects/ClassQQ/target/felix.jar"/>
+</target>
+</project>
